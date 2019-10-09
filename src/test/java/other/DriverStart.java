@@ -15,7 +15,7 @@ public class DriverStart {
 
         System.setProperty("webdriver.chrome.driver", "src/test/resources/webdrivers/chromedriver.exe");
         driver = new ChromeDriver();
-        driver.manage().window().maximize();
+        driver.manage().window().fullscreen();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
     }
